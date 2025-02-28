@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: center;
     font-family: "Audiowide", sans-serif;
+    color:salmon;
 }
 
 .global-footer {
     text-align: center;  
    font-family: "Audiowide", sans-serif;
+   color: salmon;
 }
 
 body {
