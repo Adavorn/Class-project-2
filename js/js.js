@@ -87,23 +87,20 @@ function btnSearch(){
             console.log(_image)
             console.log("")
 
-            let _html = "<div>"
+            let _html = "<div class='gif-container'>";
+
+            for (let i = 0; i < data.data.length; i++) {
+                if (i > 11) {
+                    break;
+                }
             
-            for(i=0;i<data.data.length;i++)
-            {
-
-              if(i>11)
-              {
-
-                break;
-              }
-  
-              _image = data.data[i].images.original.url;
-              _html += `<img width='100' height='100' src='${_image}'>`
- 
+                let _image = data.data[i].images.original.url;
+                _html += `<div class='gif-item'><img width='100' height='100' src='${_image}'></div>`;
             }
             
-            _html += "</div>"
+            _html += "</div>";
+            divdisplayinfo.innerHTML = _html;
+            
             
             console.log("-------------- html string ----------")
             console.log(_html)
