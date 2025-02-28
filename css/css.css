@@ -1,0 +1,16 @@
+.global-center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-footer {
+    text-align: center;
+}
+
+
+.div-scroll-1 {
+    width: 400px;
+
+}

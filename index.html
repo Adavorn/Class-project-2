@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gifs R us</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
-    
+<body onload="page_load()">
+    <nav>
+        <a href=""><img src="logo-1.jpg" width="100" height="30" alt="logo 1"></a>
+
+    </nav>
+    <P></P>
+    <main class="global-center-page">
+        <header>
+            <h2>
+                Gifs R us
+            </h2>
+        </header>
+    <P></P>
+    <div>
+        <input type="text" id="txtsearch" placeholder="# enter text to search" maxlength="25">
+        <button onclick="btnSearch()">search</button>
+        <a href="#" onclick="lnkClear()">clear</a>
+    </div>
+    <p></p>
+<div>
+    <a href="#" onclick="giphyApiDemo1()">Giphy Api demo 1</a><br>            
+</div>
+<p></p>
+<div id="divdisplayinfo" class="div-scroll-1">
+</div>
+<p></p>
+</main>
+<p></p>
+<footer class="global-footer">
+footer @ 2025
+</footer>
 </body>
-</html>
+</html
