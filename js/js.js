@@ -6,56 +6,6 @@ function page_load(){
 
 }
 
-function giphyApiDemo1()
-{
-    
-    let msgText = "# page4: giphyApiDemo1"
-
-    console.log(msgText.toUpperCase())
-
-    const divdisplayinfo = document.getElementById("divdisplayinfo");
-
-    if (divdisplayinfo == null | divdisplayinfo == undefined){       
-        msgText = "## Page3 - divdisplayinfo not found"
-        console.log(msgText) 
-        return false;
-    }
-
-    divdisplayinfo.innerText = msgText;
-
-    const _search_text = "cars"
-    const _giphy_ApiKey = "CPPlahCVIEdhglmTDt8677Q3wSPIL8Gs"
-    const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}&q=${_search_text}&limit=25&rating=g;`
-    
-    fetch(_giphyApi_Url)
-     .then(response => {
-         if (!response.ok) {
-            throw new Error('Network response was not ok');
-         }
-      return response.json();
-    })
-   
-    .then(data => {
-        console.log("#### giphy fetch.promise then - post data ###")
-        console.log(data);
-        console.log("")
-        console.log("-------- giphy json data as string ----")
-
-        console.log("")
-
-        const giphapi_image = `<img width='200' height='80' src='${data.data[0].images.original.url}'>`
-        divdisplayinfo.innerHTML = giphapi_image
-        
-    })
-    .catch(error => {
-      console.error('## There was a problem with the fetch operation:', error);
-      divdisplayinfo.innerText = error;
-    });
-    
-    console.log("..continue fetching gphy data...demo of non-blocking code")
-    divdisplayinfo.innerText = "..continue fetching giphy data...demo of non-blocking code";
-
-}
 
 function btnSearch(){
 
