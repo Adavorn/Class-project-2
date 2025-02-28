@@ -45,7 +45,7 @@ function btnSearch(){
   
 
         const _search_text = txtsearch.value 
-      const _giphy_ApiKey = "CPPlahCVIEdhglmTDt8677Q3wSPIL8Gs"
+        const _giphy_ApiKey = "CPPlahCVIEdhglmTDt8677Q3wSPIL8Gs"
         const _giphy_result_data_file = "./data/giphy2.json";
         const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}&q=${_search_text}&limit=25&rating=g`; 
 
