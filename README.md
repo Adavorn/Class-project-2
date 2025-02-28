@@ -1,7 +1,8 @@
 # project description 
+a website to search and display gifs
 
 # Author
-- author name 
+- Jacob King
 
 # Website Technology 
 - html 
@@ -11,13 +12,13 @@
 - javascript 
 
 # github code repositoty
-- https://github.com/
+- https://github.com/Adavorn/Class-project-2.git
 
 # github website url 
-- htpp://github.com/
+- https://adavorn.github.io/Class-project-2/
 
 # future improvements 
-- item 1
-- item 2
-- item 3
+- save gifs
+- add gifs
+- copy gifs
 
