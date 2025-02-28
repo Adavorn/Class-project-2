@@ -9,6 +9,9 @@
     text-align: center;
 }
 
+body {
+    background-color:slateblue;
+  }
 
 .div-scroll-1 {
     width: 400px;
