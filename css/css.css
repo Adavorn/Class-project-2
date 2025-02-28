@@ -3,10 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Audiowide", sans-serif;
 }
 
 .global-footer {
-    text-align: center;
+    text-align: center;  
+   font-family: "Audiowide", sans-serif;
 }
 
 body {
