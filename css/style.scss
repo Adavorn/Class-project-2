@@ -1,0 +1,26 @@
+/*
+
+scss generates - style1.css
+
+<link to href="/css/style1.css">
+
+- use to build large number of css code
+- add css or scss code
+- scss re-use css code
+- variables
+- functions
+- scss also generates backword compatible css code
+- other
+/*
+
+/* Define standard variables and values for website */
+$bgcolor: slateblue;
+$textcolor: salmon;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
