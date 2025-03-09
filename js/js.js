@@ -6,7 +6,6 @@ function page_load(){
 
 }
 
-
 function btnSearch(){
 
     let msgText = "# page5: btnSearch" 
@@ -29,7 +28,6 @@ function btnSearch(){
         return false
     }
   
-
     if(txtsearch.value.trim().length == 0) {
         msgText = "# please enter a valid search text"
         console.log(msgText)
@@ -37,13 +35,10 @@ function btnSearch(){
         return false 
     }
   
-
     msgText = "# searching for: " + txtsearch.value
   
-
     divdisplayinfo.innerText = msgText;
   
-
         const _search_text = txtsearch.value 
         const _giphy_ApiKey = "CPPlahCVIEdhglmTDt8677Q3wSPIL8Gs"
         const _giphy_result_data_file = "./data/giphy2.json";
@@ -100,15 +95,14 @@ function btnSearch(){
             
             _html += "</div>";
             divdisplayinfo.innerHTML = _html;
-            
-            
+                       
             console.log("-------------- html string ----------")
             console.log(_html)
             console.log("")
   
-            divdisplayinfo.innerHTML = _html
-            
+            divdisplayinfo.innerHTML = _html           
         })
+        
         .catch(error => {
           console.error('## There was a problem with the fetch operation:', error);
           divdisplayinfo.innerText = error;
