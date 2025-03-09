@@ -8,7 +8,6 @@ a website to search and display gifs
 - html 
 - css 
 - scss
-- bootstrap 
 - javascript 
 
 # github code repositoty
@@ -18,7 +17,7 @@ a website to search and display gifs
 - https://adavorn.github.io/Class-project-2/
 
 # future improvements 
-- save gifs
-- add gifs
-- copy gifs
+- save gifs to another location.
+- add or upload gifs to website.
+- edit gifs to make new versions.
 
